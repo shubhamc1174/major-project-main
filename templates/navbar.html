@@ -1,0 +1,32 @@
+{% load static %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="nav-logo" href='https://www.amdocs.com/'><img src="{% static 'images/amdbi.png' %}" width="150" height="40"> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+    <span class="navbar-toggler-icon"></span> 
+  </button> 
+  
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">        
+    <ul class="navbar-nav">
+
+        <li class="nav-item active">
+          <a class="nav-link" href={% url 'dashboard' %}><i class="fa fa-home" >Dashboard</i></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href={% url 'pkg' %}><i>Your Packages</i></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i>Recommended Packages</i></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href={% url 'about' %}><i class="fa fa-exclamation-circle" >About</i></a> 
+        </li>
+        
+    </ul>
+  </div>
+</nav> 
